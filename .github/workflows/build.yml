@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  do:
+    name: "build"
+    runs-on: [ubuntu-22.04, macos-11]
+    steps:
+      - name: clone
+        run: |
+          git --version
+          python3 --version
+          go version
